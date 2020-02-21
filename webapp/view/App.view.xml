@@ -1,0 +1,19 @@
+<mvc:View controllerName="fokind.odata.offline.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	displayBlock="true">
+	<App>
+		<Page title="OData Offline">
+			<List items="{/Invoices}">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="Invoices"/>
+						<ToolbarSpacer/>
+						<Button text="Add" press="onAddPress"/>
+					</Toolbar>
+				</headerToolbar>
+				<StandardListItem title="{ProductName}"/>
+			</List>
+		</Page>
+	</App>
+</mvc:View>
